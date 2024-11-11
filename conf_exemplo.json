@@ -1,0 +1,14 @@
+{
+    "api":{
+        "key":"chave-api",
+        "lat": -23.5506507,
+        "lon": -46.6333824,
+        "url_extract":"https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&appid={key}"
+    },
+    "database": {
+        "link":"172.17.0.2",
+        "user":"root",
+        "pass":"senhaforte",
+        "name":"climatempo"
+    }
+}
