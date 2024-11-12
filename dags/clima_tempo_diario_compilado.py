@@ -49,7 +49,7 @@ with DAG(
         'retries':10
     },
     start_date=datetime.now() - timedelta(days=1),
-    schedule_interval='23:58'
+    schedule_interval='58 23 * * *'
 ) as dag:
     
     salvar_task = PythonOperator(

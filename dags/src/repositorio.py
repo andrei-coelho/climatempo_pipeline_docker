@@ -12,12 +12,9 @@ def save_data_clima(clima: Union[ClimaDetalhado, ClimaResumoDiario]) -> bool:
     try:
         session.add(clima)
         session.commit()
-        res = session.query(ClimaDetalhado)
-        return res is not None
     except Exception as e:
         session.rollback() 
-        logger.error(f"save_data_clima - Erro ao salvar o clima: {e}")
-        return False
+        raise Exception(f"Erro ao tentar armazenar clima usando 'save_data_clima' do repositorio: {e}")
     finally:
         session.close()
 

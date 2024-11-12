@@ -1,5 +1,5 @@
-from src.repositorio import save_data_clima, get_rows_clima_detalhado
-from src.clima_model import ClimaDetalhado
+from dags.src.repositorio import save_data_clima, get_rows_clima_detalhado
+from dags.src.clima_model import ClimaDetalhado
 from datetime import datetime 
 
 

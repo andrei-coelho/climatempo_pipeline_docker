@@ -1,4 +1,4 @@
-from util.config import get_session 
+from dags.util.config import get_session 
 from sqlalchemy.orm import Session
 
 def config():

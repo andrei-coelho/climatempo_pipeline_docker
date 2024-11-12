@@ -1,4 +1,4 @@
-from src.extraction import get_data_wether
+from dags.src.extraction import get_data_wether
 
 def extraction():
     resp = get_data_wether()

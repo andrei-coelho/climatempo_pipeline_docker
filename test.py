@@ -4,10 +4,13 @@ from _tests.test_extraction import extraction
 from _tests.test_persistencia import save_data, load_data
 from _tests.test_transform import transformations
 from _tests.test_save_dialy_average_data_clima import save_dialy_avg
+from _tests.test_integrado import get_atual_temperatura
 # config()
 # modelo()
 # save_data()
-# load_data()
+# print(load_data())
 # transformations()
 # extraction()
-save_dialy_avg()
+# save_dialy_avg()
+
+get_atual_temperatura()

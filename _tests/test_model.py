@@ -1,4 +1,4 @@
-from src.clima_model import ClimaDetalhado, ClimaResumoDiario
+from dags.src.clima_model import ClimaDetalhado, ClimaResumoDiario
 
 def modelo():
     clima = ClimaDetalhado()

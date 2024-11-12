@@ -8,15 +8,14 @@ from datetime import timedelta, datetime
 
 def get_atual_temperatura():
     data = get_data_wether()
-    if not save_data_clima(ClimaDetalhado(
+    save_data_clima(ClimaDetalhado(
         data_hora=data['data_hora'],
         clima = data['clima'],
         periodo = data['periodo'],
         temperatura_atual = data['temperatura_atual'],
         temperatura_minima = 0.0,
         temperatura_maxima = 0.0
-    )): raise Exception("Erro ao tentar armazenar clima usando 'save_data_clima' do repositorio")
-
+    ))
 
 default_args = {
     'retries':5,
